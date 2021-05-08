@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Navbar title="Harry Potter Character Db"/>
     <router-view />
+    <footer class="fixed-bottom pb-3">Harry Potter Database ©2021</footer>
   </div>
 </template>
+
+<script>
+import Navbar from "@/components/Navbar.vue";
+
+export default {
+  name: "App",
+  components: {
+    Navbar,
+  },
+};
+</script>
 
 <style>
 #app {
