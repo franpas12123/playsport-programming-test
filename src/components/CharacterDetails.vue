@@ -50,4 +50,7 @@ export default {
     .content {
         text-align: left;
     }
+    .badge {
+        margin-right: 5px;
+    }
 </style>
